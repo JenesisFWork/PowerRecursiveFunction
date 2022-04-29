@@ -14,10 +14,18 @@ package recursion;
 public class PowerRecursionFunction {
     
     public static void main (String [] args) {
-        sayHelloWorld();
+        sayHelloWorld(1);
     }
 
-    public static void sayHelloWorld() {
-        System.out.println("Hello World!");
+    public static void sayHelloWorld(int n) {
+       if(n == 0) {
+           System.out.println("Goodbye World!");
+       }
+       else {
+           System.out.println("Hello World!");
+           n--;
+           sayHelloWorld(n);
+       }
     }
+    //Needs base case
 }
