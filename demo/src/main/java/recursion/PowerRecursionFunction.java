@@ -12,9 +12,8 @@
 package recursion;
 
 public class PowerRecursionFunction {
-    
     public static void main (String [] args) {
-        sayHelloWorld(1);
+        sayHelloWorld(1); //you can change to any number you wish
     }
 
     public static void sayHelloWorld(int n) {
@@ -23,7 +22,7 @@ public class PowerRecursionFunction {
        }
        else {
            System.out.println("Hello World!");
-           n--;
+           n--; //this is a decrement
            sayHelloWorld(n);
        }
     }
